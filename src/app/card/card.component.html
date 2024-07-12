@@ -1,0 +1,13 @@
+<div class="container mt-5">
+    <div class="row">
+      @for(cardp of card; track card){
+    <div class="card me-3" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">{{cardp.Pname}}</h5>
+          <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+          <button href="#" class="btn btn-primary" (click)="addToWishlist(cardp)">add</button>
+        </div>
+      </div>
+    }
+    </div>
+</div>

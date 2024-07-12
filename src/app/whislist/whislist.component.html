@@ -1,0 +1,14 @@
+<div class="container-fluid">
+    <h2 class="text-center mt-5">Wishlist</h2>
+    <ul class="col">
+        @for(card of getWishlistData();track getWishlistData()){
+           <li class="text-center card " >{{card.Pname}}</li>
+        } @empty {
+           <li class="text-center"> No order</li>
+        }
+      <!-- <li *ngFor="let item of wishlistService.getWishlist()"> -->
+        <!-- {{ item.name }} -->
+      <!-- </li> -->
+    </ul>
+  </div>
+  
